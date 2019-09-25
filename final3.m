@@ -1,5 +1,0 @@
-clc;
-clear;
-clear all;
-
-
