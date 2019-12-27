@@ -1,12 +1,16 @@
-clc;
-clear;
-clear all;
+figure 
 
-x=0:1:10;
-y=x;
-stem(x,y,'--r')
-grid on
-xlabel('burasÄ± x ekseni')
-ylabel('burasÄ± y ekseni')
-title('baÅŸlÄ±k')
-axis([3 7 3 7])
+%subplot figure penceresini dörtde ayırır. ve sırasıyla subplot(A,B,P)
+%A satır Bsütün P ise hangi dörtgene yerleşeceğini ifade eder.
+
+subplot(2,2,1)
+plot(x,x.^2+2,'--')%1.dörtgen
+
+subplot(2,2,2)
+plot(x,(x+5).^(1/3),'r--') %2.dörtgen
+
+subplot(2,2,3)
+plot(x,(x+5).^(1/3),'r--') %3.dörtgen
+
+subplot(2,2,4)
+plot(x,(x+5).^(1/3),'r--') %4.dörtgen
